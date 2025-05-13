@@ -252,14 +252,50 @@
 	background: @sound;
 }
 
-#custom-arrow9 {
+#custom-arrow11 {
 	font-size: 11pt;
 	color: @sound;
-	background: transparent;
+	background: @battery;
 }
 
 #custom-arrow10 {
 	font-size: 11pt;
 	color: @unfocused;
 	background: transparent;
+}
+
+#custom-arrow9 {
+	font-size: 11pt;
+	color: @battery;
+	background: @cpu;
+}
+
+#custom-remmina {
+	font-size: 11pt;
+	color: @white;
+	background: @battery;
+}
+
+#custom-arrow12 {
+	font-size: 11pt;
+	color: @cpu;
+	background: @memory ;
+}
+
+#custom-amnezia {
+	font-size: 11pt;
+	color: @white;
+	background: @cpu;
+}
+
+#custom-arrow13 {
+	font-size: 11pt;
+	color: @memory;
+	background: transparent;
+}
+
+#custom-hyprshot {
+	font-size: 11pt;
+	color: white;
+	background: @memory;
 }

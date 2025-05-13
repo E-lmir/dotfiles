@@ -10,7 +10,13 @@
 	],
 
 	"modules-right": [
+		"custom/arrow13",
+		"custom/hyprshot",
+		"custom/arrow12",
+		"custom/amnezia",
 		"custom/arrow9",
+		"custom/remmina",
+		"custom/arrow11",
 		"pulseaudio",
 		"custom/arrow8",
 		"network",
@@ -32,6 +38,19 @@
 	],
 
 	// Modules
+	"custom/hyprshot": {
+		"format": "   ",
+		"on-click": "hyprshot -m region --clipboard-only"
+	},
+	"custom/remmina": {
+		"format": "    ",
+		"on-click": "flatpak run org.remmina.Remmina"
+	},
+
+	"custom/amnezia": {
+		"format": "  ",
+		"on-click": "/usr/local/bin/AmneziaVPN"
+	},
 
 	"battery": {
 		"interval": 10,
@@ -57,7 +76,7 @@
 
 	"clock#time": {
 		"interval": 10,
-		"format": "{:%H:%M}",
+		"format": "{:%H:%M}  ",
 		"tooltip": false
 	},
 
@@ -138,7 +157,7 @@
 		},
 		"scroll-step": 1,
 		"on-click": "pactl set-sink-mute @DEFAULT_SINK@ toggle",
-		"tooltip": false
+		"tooltip": true 
 	},
 
 	"temperature": {
@@ -205,8 +224,23 @@
 		"tooltip": false
 	},
 
+	"custom/arrow11": {
+		"format": "",
+		"tooltip": false
+	},
+
 	"custom/arrow10": {
 		"format": "",
+		"tooltip": false
+	},
+
+	"custom/arrow12": {
+		"format": "",
+		"tooltip": false
+	},
+
+	"custom/arrow13": {
+		"format": "",
 		"tooltip": false
 	}
 }
