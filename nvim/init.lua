@@ -33,3 +33,6 @@ end)
 vim.keymap.set("i", "<Tab>", vim.fn.pumvisible() and "<C-y>" or "<Tab>")
 vim.keymap.set("i", "<C-i>", "<Cmd>lua vim.lsp.buf.format()<CR>");
 vim.keymap.set("n", "<C-i>", "<Cmd>lua vim.lsp.buf.format()<CR>");
+
+local builtin = require("telescope.builtin")
+vim.keymap.set("n", "<C-f>", builtin.live_grep, {})
