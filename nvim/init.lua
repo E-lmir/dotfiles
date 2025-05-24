@@ -38,6 +38,6 @@ local builtin = require("telescope.builtin")
 vim.keymap.set("n", "<C-f>", builtin.live_grep, {})
 
 vim.keymap.set("n", "<A-Up>", "ddkP");
-vim.keymap.set("i", "<A-Up>", "ddkP");
+vim.keymap.set("i", "<A-Up>", "<Esc>ddkPi");
 vim.keymap.set("n", "<A-Down>", "ddp");
-vim.keymap.set("i", "<A-Down>", "ddp");
+vim.keymap.set("i", "<A-Down>", "<Esc>ddpi");
