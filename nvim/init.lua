@@ -21,14 +21,15 @@ local builtin = require('telescope.builtin')
 vim.keymap.set('n', '<leader>ff', builtin.find_files, { desc = 'Telescope find files' })
 
 vim.lsp.enable('rust_analyzer')
+vim.cmd[[set completeopt=menu,menuone,noinsert,popup]]
 
 vim.keymap.set("i", "<C-r><C-r>", "<Cmd>lua vim.lsp.buf.rename()<CR>")
 vim.keymap.set("n", "<C-r><C-r>", "<Cmd>lua vim.lsp.buf.rename()<CR>")
 vim.keymap.set("i", "<C-space>", function()
   vim.lsp.completion.get()
 end)
-vim.keymap.set("n", "<C-space>", function()
-  vim.lsp.completion.get()
+vim.keymap.set("n", "<C-space><C-space>", function()
+  vim.lsp.buf.hover()
 end)
 vim.keymap.set("i", "<Tab>", vim.fn.pumvisible() and "<C-y>" or "<Tab>")
 vim.keymap.set("i", "<C-i>", "<Cmd>lua vim.lsp.buf.format()<CR>");
