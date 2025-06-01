@@ -21,6 +21,7 @@ local builtin = require('telescope.builtin')
 vim.keymap.set('n', '<leader>ff', builtin.find_files, { desc = 'Telescope find files' })
 
 vim.lsp.enable('rust_analyzer')
+vim.lsp.enable('omnisharp')
 vim.cmd[[set completeopt=menu,menuone,noinsert,popup]]
 
 vim.keymap.set("i", "<C-r><C-r>", "<Cmd>lua vim.lsp.buf.rename()<CR>")
